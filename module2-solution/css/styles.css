@@ -1,0 +1,97 @@
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-family: Helvetica;
+  font-size: 175%;
+  text-align: center;
+}
+
+p {
+  font-family: Helvetica;
+  }
+
+.menuitemcontainer {
+  	position: relative; 
+	border: 1px solid black;
+    background-color: #c5ccd3; /* light gray */
+    max-height: 200px;
+    overflow: hidden;
+ }
+
+.menuitemname {
+    position: absolute; 
+	top: -1px;
+	right: -1px;   
+	margin: 0px;        
+    font-size: 125%; 	
+	font-weight: bold;
+	text-align: center;
+	width: 120px;
+	height: 1.75em;
+	line-height: 1.5em;
+ 	border: 1px solid black;
+}
+
+.menuitemdesc {
+    color: black;
+    padding: 25px 10px 5px 10px;
+}
+
+#chicken {
+	color: black;
+    background-color: #FFB6C1; /* light pink */	
+}
+
+#beef {
+	color: white;
+    background-color: #F08080; /* light coral */	
+}
+
+#sushi {
+	color: black;
+    background-color: #F0E68C; /* khaki */	
+}
+
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    width: 31.33%;
+    margin: 1%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+    margin: 1%;
+  }
+  .col-md-6 {
+    width: 48%;
+  }
+  .col-md-12 {
+    width: 98%; 
+  }
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+    width: 96%;
+    margin: 10px 2% 10px 2%;
+  }
+}
+
